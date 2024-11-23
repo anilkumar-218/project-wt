@@ -1,0 +1,512 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #4CAF50; /* Green background color for the entire page */
+    line-height: 1.6;
+}
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #e6eaf2; /* Light background color for the entire page */
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #ff9800;
+}
+
+/* Footer Styling */
+footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Home Section */
+.home-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.home-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.home-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.home-section .button {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-section .button:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+}
+
+/* Form Section */
+.form-section {
+    width: 100%;
+    max-width: 400px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.form-section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.form-section label {
+    display: block;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="password"],
+.form-section input[type="date"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-section button {
+    width: 100%;
+    background-color: #0073e6; /* Blue color for submit button */
+    color: #fff;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-section button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/* Rooms Section */
+.rooms-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background color for contrast */
+}
+
+.rooms-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.room {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.room h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.room p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #777;
+}
+
+.room .button {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.room .button:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+}
+
+/* Room Details Section */
+.room-details-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.room-details-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.room-details-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #777;
+}
+
+.room-details-section .button {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.room-details-section .button:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+}
+
+/* Contact Us Section */
+.contact-section {
+    padding: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.contact-section label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.contact-section button {
+    width: 100%;
+    background-color: #0073e6;
+    color: #fff;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #00b503;
+    transform: scale(1.05);
+}
+
+/* Image Styling */
+img {
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+/* Fade-in Effect for Sections */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .home-section h1 {
+        font-size: 2rem;
+    }
+
+    .rooms-section h2,
+    .room-details-section h2,
+    .contact-section h2 {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+
+
+
+
+
+/* Moving and Color Changing Effect */
+@keyframes bookFast {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+        color: #ff9800; /* Initial color */
+        text-shadow: 0 0 10px #ff9800, 0 0 20px #ff9800, 0 0 30px #ff9800;
+    }
+    25% {
+        transform: translateX(25%); /* Move partially to the left */
+        color: #4CAF50; /* Green color */
+        text-shadow: 0 0 10px #4CAF50, 0 0 20px #4CAF50, 0 0 30px #4CAF50;
+    }
+    50% {
+        transform: translateX(50%); /* Move to the middle */
+        color: #ff9800; /* Return to the initial color */
+        text-shadow: 0 0 10px #ff9800, 0 0 20px #ff9800, 0 0 30px #ff9800;
+    }
+    75% {
+        transform: translateX(75%); /* Move closer to the left */
+        color: #ff5722; /* Orange color */
+        text-shadow: 0 0 10px #ff5722, 0 0 20px #ff5722, 0 0 30px #ff5722;
+    }
+    100% {
+        transform: translateX(100%); /* Move off-screen to the right */
+        color: #4CAF50; /* Green color */
+        text-shadow: 0 0 10px #4CAF50, 0 0 20px #4CAF50, 0 0 30px #4CAF50;
+    }
+}
+
+.marquee-text {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    animation: bookFast 10s linear infinite; /* Apply the book fast animation */
+    text-transform: uppercase;
+    white-space: nowrap; /* Prevent text from wrapping */
+    padding-right: 100%; /* Space after the text to prevent sudden jump when it restarts */
+    animation-duration: 5s; /* Adjust the duration for faster/slower movement */
+}
+
+
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f3;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #004aad;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffdd57;
+}
+
+/* Login Form Section */
+.form-section {
+    width: 90%;
+    max-width: 350px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #0600ad;
+}
+
+.form-section label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #555;
+}
+
+.form-section input[type="email"],
+.form-section input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #c0c4cc;
+
+}
+
+/* icon  */
+.google-btn, .facebook-btn {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between icon and text */
+}
+
+.google-btn {
+    background-color: #db4437;
+    background-image: url('google-logo.png'); /* Path to Google logo image */
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 45px;
+}
+
+.facebook-btn {
+    background-color: #4267B2;
+    background-image: url('facebook-logo.png'); /* Path to Facebook logo image */
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 45px;
+}
+
+.google-btn:hover {
+    background-color: #c53d31;
+}
+
+.facebook-btn:hover {
+    background-color: #365899;
+}
+
+
+.room-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Aligning the Payment Options header to the left */
+.top-align {
+    text-align: left;  /* Align the text to the left */
+    margin-top: 0;     /* Remove any top margin */
+    margin-left: 20px; /* Optional: Add space from the left side */
+}
